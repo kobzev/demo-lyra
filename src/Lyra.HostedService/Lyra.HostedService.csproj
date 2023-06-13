@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+  </PropertyGroup>
+  
+  <ItemGroup>
+    <PackageReference Include="LykkeCorp.Hosting" Version="6.0.1-alpha.0.1.pr.122.build.51147" />
+  </ItemGroup>
+  
+  <ItemGroup>
+    <ProjectReference Include="..\Lyra.Api\Lyra.Api.csproj" />
+    <ProjectReference Include="..\Lyra.ManagementApi\Lyra.ManagementApi.csproj" />
+  </ItemGroup>
+  
+</Project>

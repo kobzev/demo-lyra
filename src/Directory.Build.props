@@ -1,0 +1,35 @@
+<Project>
+
+  <PropertyGroup>
+    <LangVersion>8</LangVersion>
+    <Product>Lyra</Product>
+    <Company>Lykke Corp</Company>
+    <Authors>Lykke Corp</Authors>
+    <Copyright>Copyright (c) Lykke Corp. All rights reserved.</Copyright>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageProjectUrl>https://github.com/lykkecorp/lyra</PackageProjectUrl>
+    <PackageTags>lyra;banking;bank;crypto;hedging;</PackageTags>
+    <BUILD_NUMBER Condition="'$(BUILD_NUMBER)' == ''">0</BUILD_NUMBER>
+    <MinVerBuildMetadata>build.$(BUILD_NUMBER)</MinVerBuildMetadata>
+    <PublishRepositoryUrl>true</PublishRepositoryUrl>
+    <MinVerMinimumMajorMinor>0.1</MinVerMinimumMajorMinor>
+    <MinVerTagPrefix>v</MinVerTagPrefix>
+  </PropertyGroup>
+  
+  <ItemGroup>
+    <PackageReference Include="MinVer" Version="2.3.0" PrivateAssets="All" />
+  </ItemGroup>
+  <Target Name="MyTarget" AfterTargets="MinVer">
+    <PropertyGroup>
+      <!-- Main branch builds  -->
+      <MinVerPreRelease Condition="'$(SOURCE_BRANCH)' == 'refs/heads/main' AND '$(MinVerPreRelease)' != ''" >-$(MinVerPreRelease)+$(BUILD_NUMBER)</MinVerPreRelease>
+
+      <!-- Pull request builds -->
+      <MinVerPreRelease Condition="'$(SOURCE_BRANCH)' != 'refs/heads/main' AND '$(MinVerPreRelease)' != ''" >-$(MinVerPreRelease).build-$(BUILD_NUMBER)</MinVerPreRelease>
+      <PackageVersion>$(MinVerMajor).$(MinVerMinor).$(MinVerPatch)$(MinVerPreRelease)</PackageVersion>
+      <AssemblyVersion>$(MinVerMajor).$(MinVerMinor).$(MinVerPatch).$(BUILD_NUMBER)</AssemblyVersion>  
+      <FileVersion>$(MinVerMajor).$(MinVerMinor).$(MinVerPatch).$(BUILD_NUMBER)</FileVersion>
+    </PropertyGroup>
+  </Target>  
+
+</Project>

@@ -1,0 +1,22 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AWSSDK.DynamoDBv2" Version="3.7.100.16" />
+    <PackageReference Include="LykkeCorp.Bill.Logging" Version="6.0.2" />
+    <PackageReference Include="LykkeCorp.DynamoDBv2.Pagination" Version="6.0.0" />
+    <PackageReference Include="LykkeCorp.DynamoDBv2.Transactions" Version="6.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Lyra\Lyra.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Update="MinVer" Version="4.3.0" />
+  </ItemGroup>
+
+</Project>

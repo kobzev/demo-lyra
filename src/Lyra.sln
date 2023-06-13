@@ -1,0 +1,57 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31919.166
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lyra.Api", "Lyra.Api\Lyra.Api.csproj", "{48692EE1-A905-41E8-B4DC-303FDC6EEB20}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lyra.HostedService", "Lyra.HostedService\Lyra.HostedService.csproj", "{02E416DE-7FF0-4772-9754-307AFEFE40BB}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lyra.Persistence", "Lyra.Persistence\Lyra.Persistence.csproj", "{13617BB0-D308-4438-BF18-5A5BD479C026}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lyra", "Lyra\Lyra.csproj", "{CC2D76D5-5FED-423F-8552-9C903D8AFE97}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lyra.Instruments", "Lyra.Instruments\Lyra.Instruments.csproj", "{E3E16DC5-69C0-4100-9CE9-16A22A6F56B8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lyra.ManagementApi", "Lyra.ManagementApi\Lyra.ManagementApi.csproj", "{1C2FCC1B-D1D2-4E30-9136-633E37F2599D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{48692EE1-A905-41E8-B4DC-303FDC6EEB20}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{48692EE1-A905-41E8-B4DC-303FDC6EEB20}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{48692EE1-A905-41E8-B4DC-303FDC6EEB20}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{48692EE1-A905-41E8-B4DC-303FDC6EEB20}.Release|Any CPU.Build.0 = Release|Any CPU
+		{02E416DE-7FF0-4772-9754-307AFEFE40BB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{02E416DE-7FF0-4772-9754-307AFEFE40BB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{02E416DE-7FF0-4772-9754-307AFEFE40BB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{02E416DE-7FF0-4772-9754-307AFEFE40BB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{13617BB0-D308-4438-BF18-5A5BD479C026}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{13617BB0-D308-4438-BF18-5A5BD479C026}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{13617BB0-D308-4438-BF18-5A5BD479C026}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{13617BB0-D308-4438-BF18-5A5BD479C026}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CC2D76D5-5FED-423F-8552-9C903D8AFE97}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CC2D76D5-5FED-423F-8552-9C903D8AFE97}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CC2D76D5-5FED-423F-8552-9C903D8AFE97}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CC2D76D5-5FED-423F-8552-9C903D8AFE97}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E3E16DC5-69C0-4100-9CE9-16A22A6F56B8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E3E16DC5-69C0-4100-9CE9-16A22A6F56B8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E3E16DC5-69C0-4100-9CE9-16A22A6F56B8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E3E16DC5-69C0-4100-9CE9-16A22A6F56B8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1C2FCC1B-D1D2-4E30-9136-633E37F2599D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1C2FCC1B-D1D2-4E30-9136-633E37F2599D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1C2FCC1B-D1D2-4E30-9136-633E37F2599D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1C2FCC1B-D1D2-4E30-9136-633E37F2599D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {7DD2021E-CB18-4023-9344-CCA5B163E597}
+	EndGlobalSection
+EndGlobal

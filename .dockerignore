@@ -1,0 +1,13 @@
+**/bin/
+**/obj/
+**/global.json
+**/Dockerfile*
+**/.dockerignore*
+**/*.user
+**/*.Custom.json
+**/*.CustomDotSettings
+.idea/
+.vs/
+.vscode/
+**/node_modules
+adr/
